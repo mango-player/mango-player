@@ -10,7 +10,7 @@ import popupFactory from 'mango-plugin-popup/src';
 import mangoContextmenu from 'mango-plugin-contextmenu/src';
 import mangoLog from 'mango-plugin-log/src';
 import mangoCenterState from 'mango-plugin-center-state/src';
-import mangoKernelHls from 'mango-kernel-hls';
+import mangoKernelHls from 'mango-kernel-hls/src';
 import mangoKernelFlv from 'mango-kernel-flv';
 import './index.css';
 

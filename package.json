@@ -57,8 +57,11 @@
     "style-loader": "^0.20.3",
     "toxic-utils": "^0.2.0",
     "ts-loader": "^3.5.0",
+    "url-loader": "^1.0.1",
     "typescript": "^2.8.1",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.2"
+    "webpack-dev-server": "^2.9.2",
+    "webworkify": "^1.4.0",
+    "webworkify-webpack": "^2.1.2"
   }
 }
