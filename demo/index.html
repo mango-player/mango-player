@@ -8,19 +8,25 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
+
 <body>
     <section id="wrapper">
         <video tabindex="-1"></video>
     </section>
 
-    <script src="../node_modules/mango/lib/index.js"></script>
-    <script src="../node_modules/mango-kernel-hls/lib/index.js"></script>
-    <script src="../node_modules/mango-plugin-ad/lib/index.js"></script>
-    <script src="../node_modules/mango-plugin-cms/lib/index.js"></script>
-    <script src="../node_modules/mango-plugin-danmu/lib/index.js"></script>
-    <script src="../node_modules/mango-plugin-controlbar/lib/index.js"></script>
-    <!-- <script src="../node_modules/mango-plugin-log/lib/index.browser.js"></script> -->
-    <!-- <script src="/assets/index.js"></script> -->
-    <script src="./index.js"></script>
+    <script src="/assets/index.js"></script>
+    <script>
+        const player = new mangoPlayer({
+            // video_id: "4208002", 
+            video_id: "4247448",
+            // video_id: "4282278",
+            isLive: false,
+            box: 'native',
+            wrapper: '#wrapper',
+            autoplay: true,
+            controls: true
+        });
+    </script>
 </body>
+
 </html>
