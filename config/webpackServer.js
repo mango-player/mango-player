@@ -9,6 +9,7 @@ var compiler = webpack(config);
 
 var server = new WebpackDevServer(compiler, {
     contentBase: path.resolve(__dirname, '../'),
+    disableHostCheck: true,
     publicPath: "/assets/"
 });
 server.listen(8080);
