@@ -18,7 +18,7 @@
     <script>
         const player = new mangoPlayer({
             // video_id: "4208002", 
-            video_id: "4247448",
+            video_id: "4361569",
             // video_id: "4282278",
             isLive: false,
             box: 'native',
@@ -26,6 +26,11 @@
             autoplay: true,
             controls: true
         });
+
+        // 模拟获取下一集视频信息
+        setTimeout(()=> {
+            player.OnGetNextVideoInfo("4361530",false)
+        }, 1000);
     </script>
 </body>
 

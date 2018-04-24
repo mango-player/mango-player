@@ -12,6 +12,7 @@ import mangoLog from 'mango-plugin-log/src';
 import mangoCenterState from 'mango-plugin-center-state/src';
 import mangoKernelHls from 'mango-kernel-hls/src';
 import mangoKernelFlv from 'mango-kernel-flv';
+import interfaces from './interfaces';
 import './index.css';
 
 // import 'babel-polyfill';
@@ -68,6 +69,11 @@ class MangoPlayer extends Mango {
     init(){
         this.cms = new mangoCMS({vm: this});
         this.cms.getCMSData(this._config.video_id);
+
+        // 绑定播放器对外统一接口方法
+        for(let key in interfaces) {
+            this[key] = interfaces[key].bind(this)
+        }
     }
 }
 // 暴露浮层工厂方法
